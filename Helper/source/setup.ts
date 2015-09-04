@@ -6,7 +6,7 @@ namespace Helper{
 			 
 			let input:Helper.Input = new Helper.Input(inputId);
 			let output:Helper.Output  = new Helper.Output(outputId);
-			input.setChangeEventToOutput(output);			
+			input.setOnInputEventToOutput(output);			
 			
 		}				
 	}

@@ -7,7 +7,7 @@ var Helper;
         Input.prototype.getValue = function () {
             return this.element.value;
         };
-        Input.prototype.setChangeEventToOutput = function (output) {
+        Input.prototype.setOnInputEventToOutput = function (output) {
             var _this = this;
             this.element.oninput = function () {
                 var text = _this.getValue();
@@ -38,7 +38,7 @@ var Helper;
         function Setup(inputId, outputId) {
             var input = new Helper.Input(inputId);
             var output = new Helper.Output(outputId);
-            input.setChangeEventToOutput(output);
+            input.setOnInputEventToOutput(output);
         }
         return Setup;
     })();

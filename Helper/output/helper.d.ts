@@ -3,7 +3,7 @@ declare module Helper {
         private element;
         constructor(inputId: string);
         getValue(): string;
-        setChangeEventToOutput(output: Helper.Output): void;
+        setOnInputEventToOutput(output: Helper.Output): void;
     }
 }
 declare module Helper {
